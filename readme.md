@@ -38,7 +38,7 @@ eas build -p android --profile preview --local
  - [Get Emoji](https://getemoji.com/)
 
 
- ## Update to Expo  SDK50
+ ## Update to Expo  SDK52
  ```sh
  npm install expo@latest
  npx expo install --fix
