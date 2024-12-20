@@ -46,18 +46,46 @@ eas logout
 
 ## 3) Android Build
 
+### Proposal
+
+### Generate the config file
+
 Create the eas.json configuration file (Choose Y, Android):
 ```sh
 eas build:configure
 ```
 
+### Expo Tools Extension
+
 Install the VS Code Extension: [Expo Tools
 ](https://marketplace.visualstudio.com/items?itemName=expo.vscode-expo-tools)
+
+### Configure the project
+
+### Android Bundle vs APK
+
+ - .aab In the Store. Will generate optimized version of .apk by device.
+ - .apk Out from the Store. Will be bigger and not optimized.
+
+ ### Generate local APK with EAS
 
 Generate the APK locally (id: com.lojaoshop.iweather, Generate keys: Yes):
 ```sh
 eas build -p android --profile preview --local
 ```
+
+- [APK file](https://expo.dev/artifacts/eas/UhNVhY9XLJCrBRuUisSeM.apk)
+
+### Install the APK in the device
+
+### What is internal distribution
+
+### Generate remote build
+
+### Install the distribution version
+
+### Generate the production build
+
 
 ## 4) Publish at Google Play
 
