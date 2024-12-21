@@ -1,0 +1,29 @@
+{
+  "cli": {
+    "version": ">= 5.4.0",
+    "appVersionSource": "local"
+  },
+  "build": {
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_WEATHER_APP_ID": "db2538803661813dfc7529512174c9a7"
+      }
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_WEATHER_APP_ID": "db2538803661813dfc7529512174c9a7"
+      }
+    },
+    "team": {
+      "android": {
+        "distribution": "internal"
+      },
+      "env": {
+        "EXPO_PUBLIC_WEATHER_APP_ID": "db2538803661813dfc7529512174c9a7"
+      }
+    }
+  }
+}
