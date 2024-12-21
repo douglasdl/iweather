@@ -82,13 +82,69 @@ eas build -p android --profile preview --local
 
 ### Generate remote build
 
+Generate the APK remotely in the EAS cloud for internal distribution:
+```sh
+eas build -p android --profile team
+```
+
 ### Install the distribution version
 
+- [APK file](https://expo.dev/accounts/douglasdl87/projects/iweather/builds/ba01c41d-1b5c-42b3-8593-772380e86226)
+
 ### Generate the production build
+
+```sh
+eas build -p android --profile production --message "first production deploy"
+```
 
 
 ## 4) Publish at Google Play
 
+## Taking the App to the Store
+
+## [Google Play Console](https://play.google.com/console)
+
+## Create the App in the Store
+
+## Privacy Policy
+
+- [Privacy Policy Sample](https://www.rocketseat.com.br/privacy)
+
+## Contents classification
+
+## Target Public and Security
+
+## App Screenshots
+
+- [PWS Screenshots Generator & Editor](https://progressier.com/pwa-screenshots-generator)
+
+## Icon and Graphic Resources
+
+- [Figma: Google Play Store Template](https://www.figma.com/community/file/960064054935700100)
+
+## Finish the app details page
+
+## Define the testers
+
+## Create the Internal Tests Version
+
+## Test the Tests Version
+
+## Pre Launching Report
+
+## Deploy the version for production 
+
+## Await the Approval
+
+## Google Feedback
+
+## Published App
+
+## Test the published App
+
+```sh
+eas submit --platform android 
+```
 
 ## 5) iOS Build
 
@@ -98,12 +154,10 @@ eas build -p android --profile preview --local
 
 
 
-## [Google Play Console](https://play.google.com/console)
 
 ## Screenshots
 
 - [PWA Screenshots Generator](https://progressier.com/pwa-screenshots-generator)
-- [Figma: Google Play Store Template](https://www.figma.com/community/file/960064054935700100)
 
 - [API](https://openweathermap.org/api)
 
