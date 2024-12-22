@@ -189,13 +189,13 @@ eas submit --platform android
 
 ### EAS setup
 
-###
+### Github Secrets
 
-###
+### Environment Variables
 
-###
+### Run the tests deploy
 
-###
+### Test the build deploy
 
 
 ## 4) EAS Submit Android
