@@ -17,8 +17,16 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 22.x
+          node-version: 18.x
       
+      # - name: Cache node_modules
+      #   uses: actions/cache@v2
+      #   with:
+      #     path: node_modules
+      #     key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-node-
+
       - name: Install dependencies
         run: npm install
       
@@ -38,7 +46,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 22.x
+          node-version: 18.x
       
       - name: Setup EAS
         uses: expo/expo-github-action@v8
