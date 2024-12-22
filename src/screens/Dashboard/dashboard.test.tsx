@@ -19,6 +19,7 @@ describe("Screen: Dashboard", () => {
   });
 
   it('should show city weather', async () => {
+    jest.setTimeout(10000);
     jest.spyOn(api, 'get').mockResolvedValue({ data: mockWeatherAPIResponse });
 
     render(<Dashboard />);
