@@ -153,9 +153,58 @@ eas submit --platform android
 
 
 
+# CI/CD
+
+## 1) Introduction
+
+### Understanding CI and CD
+
+### Pushing the project to Github
+
+### What is Github Actions
+
+### Screenshots
+
+## 2) CI
+
+### Create the CI workflow
+
+### Configure the CI workflow
+
+### Run the super automatic tests
+
+### Fix the tests
+
+## 3) CD
+
+### Create the CD workflow
+
+### Define the workflows Dependencies
+
+### Test the fail
+
+### Jobs dependencies
+
+### Fix the test
+
+### EAS setup
+
+###
+
+###
+
+###
+
+###
 
 
-## Screenshots
+## 4) EAS Submit Android
+
+## 5) EAS Submit iOS
+
+## 6) EAS Update
+
+
 
 - [PWA Screenshots Generator](https://progressier.com/pwa-screenshots-generator)
 
