@@ -8,8 +8,6 @@ import { mockCityAPIResponse } from "@__tests__/mocks/api/mockCityAPIResponse";
 describe("Screen: Dashboard", () => {
 
   beforeAll(async () => {
-    jest.setTimeout(15000);
-    
     const city = {
       id: '1',
       name: 'Rio do Sul, BR',
@@ -26,8 +24,8 @@ describe("Screen: Dashboard", () => {
     render(<Dashboard />);
 
     // Wait for the city name to be rendered
-    await waitFor(() => expect(screen.getByText(/rio do sul/i)).toBeTruthy());
-  });
+    await waitFor(() => expect(screen.findByText(/rio do sul/i, {}, { timeout: 3000 })).toBeTruthy);
+  })
 
   it('should show another selected weather city', async () => {
     jest.spyOn(api, 'get')
