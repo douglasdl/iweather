@@ -8,6 +8,8 @@ import { mockCityAPIResponse } from "@__tests__/mocks/api/mockCityAPIResponse";
 describe("Screen: Dashboard", () => {
 
   beforeAll(async () => {
+    jest.setTimeout(15000);
+    
     const city = {
       id: '1',
       name: 'Rio do Sul, BR',
@@ -19,7 +21,6 @@ describe("Screen: Dashboard", () => {
   });
 
   it('should show city weather', async () => {
-    jest.setTimeout(15000);
     jest.spyOn(api, 'get').mockResolvedValue({ data: mockWeatherAPIResponse });
 
     render(<Dashboard />);
