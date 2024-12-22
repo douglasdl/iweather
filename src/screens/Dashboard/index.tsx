@@ -56,10 +56,11 @@ export function Dashboard() {
       return;
     }
 
-    getCities(search)
-    const debounce = setTimeout(() => getCities(search), 500);
+    const debounce = setTimeout(() => {
+      getCities(search);
+    }, 500);
 
-    return () => clearInterval(debounce);
+    return () => clearTimeout(debounce);
   }, [search]);
 
   useEffect(() => {
