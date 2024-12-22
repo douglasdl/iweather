@@ -193,7 +193,7 @@ eas submit --platform android
 
 ### Environment Variables
 
-### Run the tests deploy
+### Run the Android deploy test
 
 ### Test the build deploy
 
