@@ -16,6 +16,7 @@ type CityContextDataProps = {
 export const CityContext = createContext<CityContextDataProps>({} as CityContextDataProps);
 
 export function CityProvider({ children }: CityContextProviderProps) {
+  const [restoreDefault, setRestoreDefault] = useState(false);
   const [cityIsLoading, setCityIsLoading] = useState(true);
   const [city, setCity] = useState<CityProps | null>(null);
 
@@ -29,11 +30,15 @@ export function CityProvider({ children }: CityContextProviderProps) {
   }
 
   useEffect(() => {
-    setCityIsLoading(true);
-
-    getStorageCity()
-      .then((data) => setCity(data))
-      .finally(() => setCityIsLoading(false));
+    if(restoreDefault) {
+      removeStorageCity()
+    } else {
+      setCityIsLoading(true);
+  
+      getStorageCity()
+        .then((data) => setCity(data))
+        .finally(() => setCityIsLoading(false));
+    }
   }, []);
 
   return (
