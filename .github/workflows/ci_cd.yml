@@ -65,5 +65,5 @@ jobs:
       - name: Verify google-services.json
         run: cat google-services.json
 
-      - name: Build
-        run: eas build --platform android --profile production --non-interactive --no-wait --build-logger-level debug
+      - name: Build and Submit
+        run: eas build --platform android --profile production --non-interactive --auto-submit-with-profile=preview --no-wait 
