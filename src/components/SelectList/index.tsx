@@ -22,6 +22,8 @@ export function SelectList(props: Props) {
         onChangeText={props.onChange}
         isLoading={props.isLoading}
         value={props.value}
+        keyboardAppearance="dark"
+        keyboardType="default"
       />
 
       <View style={styles.options} testID='options'>
