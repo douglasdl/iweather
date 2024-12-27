@@ -40,9 +40,6 @@
     "runtimeVersion": "1.0.0",
     "updates": {
       "url": "https://u.expo.dev/d22817aa-44bf-44fb-bdab-a7cf375f0651"
-    },
-    "plugins": [
-      "expo-font"
-    ]
+    }
   }
 }
