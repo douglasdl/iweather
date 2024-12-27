@@ -4,16 +4,29 @@
     "appVersionSource": "local"
   },
   "build": {
-    "production": {
-    },
     "preview": {
+      "autoIncrement": true,
       "android": {
-        "buildType": "apk"
+        "distribution": "internal",
+        "autoIncrement": "versionCode"
+      },
+      "ios": {
+        "simulator": true
       }
     },
-    "team": {
+    "production": {
+      "autoIncrement": true,
       "android": {
-        "distribution": "internal"
+        "autoIncrement": "versionCode"
+      }
+    }
+  },
+  "submit": {
+    "preview": {
+      "android": {
+        "track": "internal",
+        "serviceAccountKeyPath": "./google-services.json",
+        "releaseStatus": "draft"
       }
     }
   }

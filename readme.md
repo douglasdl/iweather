@@ -14,7 +14,7 @@
 
 - [Figma: iWeather](https://www.figma.com/design/DJNBaGr7hnvf3cGUQr6dJU/iWeather-•-Projeto-React-Native?node-id=0-1&p=f&t=3pbMloGkBfQYtNaq-0)
 
-## Icon and Splash screen configuration
+### Icon and Splash screen configuration
 
 
 ## 2) Expo Aplication Services
@@ -100,47 +100,47 @@ eas build -p android --profile production --message "first production deploy"
 
 ## 4) Publish at Google Play
 
-## Taking the App to the Store
+### Taking the App to the Store
 
-## [Google Play Console](https://play.google.com/console)
+### [Google Play Console](https://play.google.com/console)
 
-## Create the App in the Store
+### Create the App in the Store
 
-## Privacy Policy
+### Privacy Policy
 
 - [Privacy Policy Sample](https://www.rocketseat.com.br/privacy)
 
-## Contents classification
+### Contents classification
 
-## Target Public and Security
+### Target Public and Security
 
-## App Screenshots
+### App Screenshots
 
 - [PWS Screenshots Generator & Editor](https://progressier.com/pwa-screenshots-generator)
 
-## Icon and Graphic Resources
+### Icon and Graphic Resources
 
 - [Figma: Google Play Store Template](https://www.figma.com/community/file/960064054935700100)
 
-## Finish the app details page
+### Finish the app details page
 
-## Define the testers
+### Define the testers
 
-## Create the Internal Tests Version
+### Create the Internal Tests Version
 
-## Test the Tests Version
+### Test the Tests Version
 
-## Pre Launching Report
+### Pre Launching Report
 
-## Deploy the version for production 
+### Deploy the version for production 
 
-## Await the Approval
+### Await the Approval
 
-## Google Feedback
+### Google Feedback
 
-## Published App
+### Published App
 
-## Test the published App
+### Test the published App
 
 ```sh
 eas submit --platform android 
@@ -148,9 +148,95 @@ eas submit --platform android
 
 ## 5) iOS Build
 
+### iOS Focus
+
+### Run App in iOS
+
+- EAS CLI Login:
+```sh
+eas login
+```
+
+- Expo Go App Login
+
+Run the project to confirm it is OK:
+```sh
+npx expo start
+```
+
+### Install Fastlane on MacOS
+
+- [Fastlane](https://fastlane.tools/)
+
+- Install Fastlane with brew:
+```sh
+brew install fastlane
+```
+
+### Config the test build
+
+### Generate the IPA
+
+Generate the IPA locally (bundle identifier: com.lojaoshop.iweather):
+```sh
+npx eas build -p ios --profile preview --local
+```
+
+### Install in the emulator
+
+### Apple Developer Program
+
+- [Apple Developer](https://developer.apple.com/)
+
+### Generate the production build
+
+Generate the production build in the Apple Developer Account:
+```sh
+npx eas build -p ios --profile production
+```
+
+### Next Step
+
 
 ## 6) Publish at Apple Store
 
+### Taking the App to the Apple Store
+
+### Create the App in the Apple Store
+
+### Screenshots
+
+### Promotional Text
+
+### Build Upload
+
+- [Transporter](https://apps.apple.com/jp/app/transporter/id1450874784?l=en-US&mt=12)
+
+### Pricing and Availability
+
+### App Privacity
+
+### [TestFlight](https://developer.apple.com/testflight/)
+
+### Define the Testers
+
+### TestFlight's App
+
+### Testing the App
+
+### Information Review
+
+### Send App for Revision
+
+### Await the Approval 
+
+### Apple Feedback
+
+### Make the Adjusts
+
+### Published App
+
+### Ending
 
 
 # CI/CD
@@ -200,10 +286,81 @@ eas submit --platform android
 
 ## 4) EAS Submit Android
 
+### EAS Submit
+
+### Google Service Account
+
+### Create the Secret for the Google Play Service Account
+
+- [JSON to Base64](https://codebeautify.org/json-to-base64-converter)
+
+### Get the Google Play Service Credentials
+
+### Submit Configuration
+
+Add this to the "eas.json":
+```json
+"submit": {
+  "preview": {
+    "android": {
+      "track": "internal",
+      "serviceAccountKeyPath": "./google-services.json",
+      "releaseStatus": "draft"
+    }
+  }
+}
+```
+
+### Make the Android Build and Submit
+
+
+
+### Android Build and Submit
+
+### Conclusion
+
 ## 5) EAS Submit iOS
+
+### iOS Configuration
+
+### iOS Credentials
+
+### Create Specific Password
+
+### Create Secret for the Password
+
+### Configure and Run
+
+### Version Bump
+
+### Check the Build and Submit
+
+### Semantic Versions
+
+### Build and Submit for both
+
+### Define the Review Version
+
+### Check the Build and Submit
+
+### Conclusion
+
 
 ## 6) EAS Update
 
+### Know the EAS Update
+
+### Configure the Update
+
+### Build Generation
+
+### Build Test
+
+### Update Test
+
+### Updates Dashboard
+
+### Conclusion
 
 
 - [PWA Screenshots Generator](https://progressier.com/pwa-screenshots-generator)
