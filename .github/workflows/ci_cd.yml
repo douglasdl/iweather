@@ -55,6 +55,11 @@ jobs:
           sudo update-alternatives --config java
           java -version
       
+      - name: Set JAVA_HOME to Java 17
+        run: |
+          echo "JAVA_HOME=$(dirname $(dirname $(readlink -f $(which javac))))" >> $GITHUB_ENV
+          echo $JAVA_HOME
+
       - name: Setup EAS
         uses: expo/expo-github-action@v8
         with:
