@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ImageBackground, Text, View, ScrollView } from 'react-native';
+import { ImageBackground, Text, View, ScrollView, KeyboardAvoidingView, Platform, TouchableWithoutFeedback, Keyboard } from 'react-native';
 
 import { styles } from './styles';
 import Logo from "@assets/logo.svg";
@@ -37,28 +37,37 @@ export function Search() {
   }, [search]);
 
   return (
-    <ScrollView>
-      <ImageBackground source={bg} defaultSource={bg} style={styles.container} resizeMode="cover">
-        <Logo width={186} height={32} />
+    <ImageBackground source={bg} defaultSource={bg} style={styles.container} resizeMode="cover">
+      <KeyboardAvoidingView
+        style={{ flex: 1 }}
+        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+      >
+        <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
+          <View style={{ alignItems: "center" }}>
+            <Logo width={186} height={32} />
+          <ScrollView contentContainerStyle={{ flex: 1, alignItems: "center" }}>
 
-        <View style={styles.content}>
-          <Text style={styles.title}>
-            Boas vindas ao <Text style={styles.brand}>iWeather</Text>
-          </Text>
+            <View style={styles.content}>
+              <Text style={styles.title}>
+                Boas vindas ao <Text style={styles.brand}>iWeather</Text>
+              </Text>
 
-          <Text style={styles.subtitle}>
-            Escolha um local para ver a previsão do tempo
-          </Text>
+              <Text style={styles.subtitle}>
+                Escolha um local para ver a previsão do tempo
+              </Text>
 
-          <SelectList
-            data={cities}
-            onChange={setSearch}
-            isLoading={isLoading}
-            onPress={handleChanceCity}
-            placeholder="Buscar local"
-          />
-        </View>
-      </ImageBackground>
-    </ScrollView>
+              <SelectList
+                data={cities}
+                onChange={setSearch}
+                isLoading={isLoading}
+                onPress={handleChanceCity}
+                placeholder="Buscar local"
+              />
+            </View>
+          </ScrollView>
+          </View>
+        </TouchableWithoutFeedback>
+      </KeyboardAvoidingView>
+    </ImageBackground>
   );
 }
