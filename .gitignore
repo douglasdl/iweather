@@ -18,5 +18,7 @@ web-build/
 
 .env
 
-android
-ios
+android/
+ios/
+
+build_apps/
