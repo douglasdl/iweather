@@ -12,13 +12,15 @@
       },
       "ios": {
         "simulator": true
-      }
+      },
+      "channel": "preview"
     },
     "production": {
       "autoIncrement": true,
       "android": {
         "autoIncrement": "versionCode"
-      }
+      },
+      "channel": "production"
     }
   },
   "submit": {
