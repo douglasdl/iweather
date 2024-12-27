@@ -19,13 +19,13 @@ jobs:
         with:
           node-version: 18.x
       
-      # - name: Cache node_modules
-      #   uses: actions/cache@v2
-      #   with:
-      #     path: node_modules
-      #     key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-node-
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       - name: Install dependencies
         run: npm install
@@ -62,5 +62,8 @@ jobs:
           echo $GOOGLE_SERVICES_64 > google-services.json.b64
           base64 -d -i google-services.json.b64 > google-services.json
 
+      - name: Verify google-services.json
+        run: cat google-services.json
+
       - name: Build
-        run: eas build --platform android --profile production --non-interactive --no-wait --verbose
+        run: eas build --platform android --profile production --non-interactive --no-wait --log-level debug
