@@ -341,7 +341,13 @@ Add this to the "eas.json":
 
 ### Build and Submit for both platforms
 
-### Define the Review Version
+### Define the Reference Version
+
+```sh
+eas build:version:set
+```
+
+- Select Android and inform the version number.
 
 ### Check the Build and Submit
 
@@ -354,11 +360,34 @@ Add this to the "eas.json":
 
 ### Configure the Update
 
+Confirm that you are logged:
+```sh
+eas whoami
+```
+
+Install the dependencies:
+```sh
+npx expo install expo-updates
+```
+
+Configure:
+```sh
+eas update:configure
+```
+
 ### Build Generation
+
+```sh
+eas build -p android --profile preview
+```
 
 ### Build Test
 
-### Update Test
+### Send the Update
+
+```sh
+eas update --branch preview --message "Search title update"
+```
 
 ### Updates Dashboard
 
