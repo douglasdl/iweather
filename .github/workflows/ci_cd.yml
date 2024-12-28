@@ -48,24 +48,15 @@ jobs:
         with:
           node-version: 18.x
 
-      - name: Install Java 17
-        run: |
-          openjdk version "17.0.12" 2024-07-16
-          OpenJDK Runtime Environment (build 17.0.12+7-Ubuntu-1ubuntu222.04)
-          OpenJDK 64-Bit Server VM (build 17.0.12+7-Ubuntu-1ubuntu222.04, mixed mode, sharing)
-          java -version
-      
-      - name: Set JAVA_HOME to Java 17
-        run: |
-          echo "JAVA_HOME=$(dirname $(dirname $(readlink -f $(which javac))))" >> $GITHUB_ENV
-          echo $JAVA_HOME
-
       - name: Setup EAS
         uses: expo/expo-github-action@v8
         with:
           eas-version: latest
           package: npm
           token: ${{ secrets.EAS_EXPO_TOKEN }}
+
+      - name: Install dependencies
+        run: npm install
 
       - name: Get Config File
         env:

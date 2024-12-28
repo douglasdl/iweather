@@ -20,6 +20,9 @@
       "android": {
         "autoIncrement": "versionCode"
       },
+      "ios": {
+        "image": "latest"
+      },
       "channel": "production"
     }
   },
