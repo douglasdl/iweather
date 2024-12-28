@@ -42,7 +42,8 @@
     "jest-transformer-svg": "^2.0.2",
     "metro-react-native-babel-transformer": "^0.77.0",
     "react-native-svg-transformer": "^1.5.0",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "@react-native-community/cli": "latest"
   },
   "private": true
 }

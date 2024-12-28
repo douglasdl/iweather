@@ -29,6 +29,10 @@
         "track": "internal",
         "serviceAccountKeyPath": "./google-services.json",
         "releaseStatus": "draft"
+      },
+      "ios": {
+        "appleId": "douglas_san@hotmail.com",
+        "ascAppId": "6739788325"
       }
     }
   }
