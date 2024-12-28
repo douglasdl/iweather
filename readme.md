@@ -339,7 +339,7 @@ Add this to the "eas.json":
 
 ### Semantic Versions
 
-### Build and Submit for both
+### Build and Submit for both platforms
 
 ### Define the Review Version
 

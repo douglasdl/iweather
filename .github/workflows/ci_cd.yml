@@ -69,4 +69,4 @@ jobs:
         run: cat google-services.json
 
       - name: Build and Submit
-        run: EXPO_APPLE_APP_SPECIFIC_PASSWORD=${{ secrets.EAS_APPLE_APP_SPECIFIC_PASSWORD }} eas build --platform ios --profile production --non-interactive --auto-submit-with-profile=preview --no-wait 
+        run: EXPO_APPLE_APP_SPECIFIC_PASSWORD=${{ secrets.EAS_APPLE_APP_SPECIFIC_PASSWORD }} eas build --platform all --profile production --non-interactive --auto-submit-with-profile=preview --no-wait 
