@@ -1,3 +1,60 @@
+# 6. Tests
+
+## 1) Introduction 
+
+### Opening
+
+### Project Download
+
+### API Access
+
+### Knowing the Project
+
+## 2) Unit Tests
+
+### What is a unit test
+
+- [Jest](https://jestjs.io)
+
+### Installing and Configuring the Jest
+
+- [Jest for Expo](https://docs.expo.dev/develop/unit-testing/)
+
+Install Jest
+```sh
+npx expo install jest-expo jest @types/jest -- --save-dev
+```
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###
+
+
+## 3) Components Tests
+
+## 4) Mocks
+
+## 5) Testing Hooks
+
+## 6) Code Coverage
+
+## 7) Integration Tests
+
+
 # Expo Go
 
 ## 1) Preparing to Publish
