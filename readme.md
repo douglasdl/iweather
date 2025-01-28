@@ -25,23 +25,35 @@ Install Jest
 npx expo install jest-expo jest @types/jest -- --save-dev
 ```
 
-###
+### Create a Test File with .test or .spec
 
-###
+### Create a Test Case
 
-###
+### Create the first test
 
-###
+### Use test or it
 
-###
+### Grouping tests with Describe
 
-###
+### Tests structure
 
-###
+```ts
+describe("group name", () => {
+  it("test 1 name", () => {
+    // code
+  });
 
-###
+  it("test 2 name", () => {
+    // code
+  });
+});
+```
 
-###
+### Using the Jest Runner
+
+VS Code Extension - [Jest Runner](https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner)
+
+### Test Debug with Jest Runner
 
 
 ## 3) Components Tests
