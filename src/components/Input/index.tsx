@@ -1,10 +1,10 @@
 import { View, TextInput, TextInputProps, ActivityIndicator } from 'react-native';
 
-import { styles } from './styles';
-import { theme } from '@styles/theme';
+import { styles } from './styles'
+import { theme } from '@styles/theme'
 
 type Props = TextInputProps & {
-  isLoading?: boolean;
+  isLoading?: boolean
 }
 
 export function Input({ isLoading = false, ...rest }: Props) {

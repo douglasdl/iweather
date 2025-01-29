@@ -58,6 +58,33 @@ VS Code Extension - [Jest Runner](https://marketplace.visualstudio.com/items?ite
 
 ## 3) Components Tests
 
+### Testing Components
+
+### Installing and configuring the React Native Testing Library
+
+- [React Native Testing Library](https://callstack.github.io/react-native-testing-library/)
+
+```sh
+npm install -D @testing-library/react-native
+npm install -D eslint-plugin-testing-library
+```
+
+### Tests Organization
+
+### Renderinf the Component in the Test
+
+### Render Debug
+
+### testID
+
+### Understanding the get and the query
+
+<img src="./jest.png" alt="Understanding the get and the query" />
+
+### toBeTruthy
+
+### Ajusting the VSCode Layout
+
 ## 4) Mocks
 
 ## 5) Testing Hooks
