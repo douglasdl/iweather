@@ -87,6 +87,32 @@ npm install -D eslint-plugin-testing-library
 
 ## 4) Mocks
 
+### GetByText
+
+### TextMatch
+
+### fireEvent
+
+### What is a Mock
+
+### Function Mock
+
+### toBeCalledWith
+
+- "toBeCalledWith" was deprecated. Need to use "toHaveBeenCalledWith".
+
+### Testing the empty SelectList
+
+### AOI Mock with spuOn
+
+### Folder for Mocks
+
+### Testing API return
+
+### Get API info
+
+### Native Modules Mock
+
 ## 5) Testing Hooks
 
 ## 6) Code Coverage

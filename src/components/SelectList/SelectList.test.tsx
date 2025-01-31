@@ -22,7 +22,7 @@ describe("Component: SelectList", () => {
       const selectedCity = screen.getByText(/hirakata/i);
       fireEvent.press(selectedCity);
 
-      expect(onPress).toBeCalledWith(data[0]);
+      expect(onPress).toHaveBeenCalledWith(data[0]);
   })
 
   it("should not show options when data props is empty", () => {
