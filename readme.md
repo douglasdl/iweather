@@ -113,6 +113,37 @@ npm install -D eslint-plugin-testing-library
 
 ### Native Modules Mock
 
+### Async Storage Mock
+
+- [Documentation](https://reactnative.dev/docs/asyncstorage)
+
+### saveStorageCity Test
+
+### removeStorageCity Test
+
+### Day Component
+
+### Jest SVG Transform
+
+Install the dependencies:
+```sh
+npm i jest-transformer-svg -D 
+```
+
+Add this to "jest.config.json" file:
+```json
+"transform": {
+  "^.+\\.jsx?$": "babel-jest",
+  "^.+\\.svg$": "jest-transformer-svg"
+}
+```
+
+### Finish the Day Component Test
+
+### Testing the NextDays Component
+
+### WeatherItem
+
 ## 5) Testing Hooks
 
 ## 6) Code Coverage

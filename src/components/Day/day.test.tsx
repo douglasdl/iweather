@@ -9,8 +9,8 @@ describe('Component: Day', () => {
       <Day 
         data={{ 
           day: '18/07',
-          min: '30°c',
-          max: '34°c',
+          min: '30°C',
+          max: '34°C',
           icon: clearDay,
           weather: 'Céu limpo'
         }}
@@ -18,5 +18,7 @@ describe('Component: Day', () => {
     )
 
     expect(screen.getByText('18/07')).toBeTruthy()
+    expect(screen.getByText('30°C')).toBeTruthy()
+    expect(screen.getByText('34°C')).toBeTruthy()
   })
 })
