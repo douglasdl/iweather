@@ -146,7 +146,42 @@ Add this to "jest.config.json" file:
 
 ## 5) Testing Hooks
 
+### Tests on Hooks
+
+### Hooks Rendering
+
+### Wrapper
+
+### waitFor and act
+
+### Updating the State
+
+### SafeAreaProvider Mock
+
+- [Github Documentation](https://github.com/AppAndFlow/react-native-safe-area-context)
+
+### Using findByText
+
+### CustomRender
+
+### Finishing the routes Test
+
 ## 6) Code Coverage
+
+### Coverage Report
+
+### Generating the Report
+
+```sh
+npm run test:coverage
+```
+
+### Understanding the Report
+
+### Configuring the Report
+
+### Configuring a folder with the coverageDirectory
+
 
 ## 7) Integration Tests
 

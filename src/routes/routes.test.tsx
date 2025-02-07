@@ -6,7 +6,7 @@ import { api } from "@services/api"
 import { mockWeatherAPIResponse } from "@__tests__/mocks/api/mockWeatherAPIResponse"
 
 describe("Routes", () => {
-  it('should be render Search screen when not city selecte', async () => {
+  it('should render Search screen when no city is selected', async () => {
     render(
       <Routes />
     )
@@ -16,7 +16,7 @@ describe("Routes", () => {
     expect(title).toBeTruthy()
   })
 
-  it('shoul be render Dashboard screen when has city selected', async () => {
+  it('should render Dashboard screen when a city is selected', async () => {
     jest.spyOn(api, 'get').mockResolvedValue({ data: mockWeatherAPIResponse })
 
     const city = {

@@ -1,10 +1,14 @@
-import { ReactElement, ReactNode } from "react";
+import { ReactElement, ReactNode } from "react"
 
-import { CityProvider } from "@contexts/CityContext";
-import { SafeAreaProvider } from "react-native-safe-area-context";
-import { RenderOptions, render } from "@testing-library/react-native";
+import { CityProvider } from "@contexts/CityContext"
+import { SafeAreaProvider } from "react-native-safe-area-context"
+import { RenderOptions, render } from "@testing-library/react-native"
 
-function Providers({ children }: { children: ReactNode }) {
+interface ProvidersProps {
+  children: ReactNode
+}
+
+function Providers({ children }: ProvidersProps) {
   return (
     <SafeAreaProvider>
       <CityProvider>
