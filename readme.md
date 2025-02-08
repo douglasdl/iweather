@@ -185,6 +185,26 @@ npm run test:coverage
 
 ## 7) Integration Tests
 
+### Integration Test
+
+### Testing the Search
+
+### Testing the Dashboard
+
+### Multiple Requisitions
+
+### waitForElementToBeRem
+
+### Finishing the Dashboard Test
+
+### befare and after
+
+### bail Property
+
+### Watching Files Updates
+
+### Ending
+
 
 # Expo Go
 

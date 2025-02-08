@@ -10,7 +10,7 @@ describe("Screen: Dashboard", () => {
   beforeAll(async () => {
     const city = {
       id: '1',
-      name: 'Rio do Sul, BR',
+      name: 'Hirakata, JP',
       latitude: 123,
       longitude: 456
     };
@@ -24,11 +24,11 @@ describe("Screen: Dashboard", () => {
     render(<Dashboard />);
 
     // Wait for the city name to be rendered
-    const cityName = await screen.findByText(/rio do sul/i, {}, { timeout: 3000 });
+    const cityName = await screen.findByText(/hirakata/i, {}, { timeout: 3000 });
     expect(cityName).toBeTruthy();
   })
 
-  it('should show another selected weather city', async () => {
+  it('should show another selected city weather', async () => {
     jest.spyOn(api, 'get')
       .mockResolvedValueOnce({ data: mockWeatherAPIResponse }) // First mock (weather data)
       .mockResolvedValueOnce({ data: mockCityAPIResponse }) // Second mock (city search response)
